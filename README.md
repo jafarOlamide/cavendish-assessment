@@ -5,7 +5,8 @@ A website directory API to test Laravel Knowledge
 ## Local Installation
 
 **Requirements**
-Running this app locally requires Docker. If you do not have Docker installed, a local installation of the following services is required.
+
+Running this app locally requires Docker. If you do not have Docker installed, a local installation of the following services is required:
 
 -   php
 -   mysql
