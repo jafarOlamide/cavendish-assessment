@@ -11,6 +11,7 @@ Running this app locally requires Docker. If you do not have Docker installed, a
 -   mysql
 
 **Starting The App**
+
 Run the following command
 
     ./vendor/bin/sail up
@@ -21,5 +22,5 @@ Docker compose can also be used as well
 
 **API Documentation**
 
-To test this app locally on your PC after completing the above, visit the url below
+To test this app locally on your PC after completing the above, visit the url:
 [Postman Collection](https://documenter.getpostman.com/view/15164416/2sA3XWdyvb)
