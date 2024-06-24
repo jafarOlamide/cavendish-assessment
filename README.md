@@ -8,18 +8,22 @@ A website directory API to test Laravel Knowledge
 
 Running this app locally requires Docker. If you do not have Docker installed, a local installation of the following services is required.
 
- - php 
- - mysql
+-   php
+-   mysql
 
 ## Starting The App
 
-Run the following command 
+Run the following command
 
     ./vendor/bin/sail up
 
 Docker compose can also be used as well
 
     docker compose up
+
+Run database migrations with
+
+    ./vendor/bin/sail artisan migrate
 
 ## API Documentation
 
