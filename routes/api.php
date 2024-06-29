@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminDeleteWebsiteController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CategoriesContoller;
 use App\Http\Controllers\VoteController;
@@ -28,7 +29,7 @@ Route::post('/websites/search', [WebsiteController::class, 'search'])->name('web
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/vote/{website}', [VoteController::class, 'store'])->name('website.vote');
     Route::delete('/unvote/{website}', [VoteController::class, 'delete'])->name('website.unvote');
-
+    Route::post('/logout', LogoutController::class)->name('logout');
 
     //Admin Website Delete
     Route::delete('/admin/website/{website}', [AdminDeleteWebsiteController::class, 'delete'])->name('admin.website.delete');

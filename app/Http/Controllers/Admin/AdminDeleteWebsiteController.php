@@ -10,10 +10,6 @@ use Illuminate\Support\Facades\Gate;
 
 class AdminDeleteWebsiteController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware(['can:delete,post'])->only('home', 'index');
-    // }
 
     public function delete(Request $request, Website $website)
     {
